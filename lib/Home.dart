@@ -2,7 +2,7 @@ import 'dart:async';
 import 'barriers.dart';
 import 'package:flutter/material.dart';
 import 'package:game/bird.dart';
-
+final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -101,7 +101,7 @@ bool checkBarrierLost(){
 }
 void _showDialog(){
 showDialog(context: context,
-    builder: (BuildContext context) {
+    builder: (dialogContext) {
   return AlertDialog(
     backgroundColor:Colors.brown,
     title:Text('game over',
@@ -121,7 +121,7 @@ showDialog(context: context,
         setState((){
           gameHasStarted=false;
         });
-        Navigator.of(context,rootNavigator: true).pop();
+        Navigator.of(dialogContext,rootNavigator: true).pop();
 
 
   },
@@ -152,6 +152,7 @@ showDialog(context: context,
     }
     },
       child: Scaffold(
+        key: _scaffoldKey,
         appBar: AppBar(
           title: Text('Flappy Bird'),
         ),
