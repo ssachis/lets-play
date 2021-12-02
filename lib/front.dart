@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
                         child: Image(
                           width: 300,
                           image: NetworkImage(
-                              'https://psmag.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTI3NTgyMjIwOTYwNjM1MzU4/flappy-bird.jpg'),),
+                              'https://psmag.com/.images/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTI3NTgyMjIwOTYwNjM1MzU4/flappy-bird.jpg'),),
                       ),
                     ),
                   ),

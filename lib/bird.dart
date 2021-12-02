@@ -7,7 +7,7 @@ class MyBird extends StatelessWidget {
       height:60,
       width:60,
       child:Image.asset(
-      'lib/image/bird2/img.png'
+      'lib/images/bird2/img.png'
     ),
     );
   }

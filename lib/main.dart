@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 
+
 import 'setup/login.dart';
+import 'arkenoid.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 void main() async{
@@ -21,7 +23,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.grey[200],
         primarySwatch: Colors.blue,
       ),
-      home: LoginPage(),
+      home:
+     LoginPage(),
     );
   }
 }
